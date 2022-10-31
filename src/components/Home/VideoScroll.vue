@@ -31,13 +31,8 @@
 <script>
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 
-// import style (>= Swiper 6.x)
 import 'swiper/swiper-bundle.css'
-
-import 'swiper/swiper-bundle.css'
-import "swiper/css/pagination";
-
-import "./style.css";
+// import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper";
@@ -57,7 +52,7 @@ import { Pagination } from "swiper";
 				videoNum: 0,
 				scrollY : 0,
 				// Navigation,
-				// Pagination,
+				Pagination,
 				// Scrollbar,
 				// A11y,
 			};

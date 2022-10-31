@@ -2,8 +2,8 @@ import Vue from 'vue';
 import App from './App.vue';
 import VueRouter from 'vue-router';
 
-import Main from './mainPage.vue';
-import Mobile from './Mobile.vue';
+
+import Home from './components/Home/VideoScroll.vue';
 
 Vue.config.productionTip = false
 
@@ -13,14 +13,17 @@ const routes = [
     // 이곳에 router 를 등록할 것 입니다.
     {
       path: '/',
-      name: 'main',
-      component: Main
+      name: 'Home',
+      component: Home
     },
     {
-      path: '/index',
-      name: 'mobile',
-      component: Mobile
+      path: '/Home',
+      name: 'Home',
+      component: Home
     },
+
+
+
 ];
 
 // router 객체생성
