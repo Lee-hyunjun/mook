@@ -1,6 +1,8 @@
 <template>
+  <div>
     <swiper id="Home"
       :options="swiperOption"
+       @slideChange="changeSlide"
       class="mySwiper"
     >
         <swiper-slide class="video_box">
@@ -22,8 +24,14 @@
             </video>
         </swiper-slide>
 
-        <div class="pagination_fraction"></div>
       </swiper>
+      
+        <div class="slideNum">
+          <p id="slideNum">{{slideNum}}</p>
+          <p ><span id="line"></span></p>
+          <p>3</p>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -52,7 +60,7 @@ import "swiper/components/scrollbar/scrollbar.scss"; // *
 		},
     setup() {
       return {
-        modules: [Navigation, Pagination,Parallax, Scrollbar, EffectFade, Autoplay ],
+        modules: [Navigation, Scrollbar, EffectFade, Autoplay ],
       };
     },
 		data() {
@@ -67,28 +75,57 @@ import "swiper/components/scrollbar/scrollbar.scss"; // *
             el: ".pagination_fraction",   //페이징 태그 클래스 설정 
             type : 'fraction'
           },
-          // modules:[this.modules],
+          modules:[Parallax,Pagination],
 					speed: 1000,
 				},
 
-				videoNum: 0,
-				scrollY : 0,
-				// Navigation,
-				// Scrollbar,
-				// A11y,
+				slideNum:1,
 			};
 		},
 
 
 		
 		created() {
-			console.log(this.modules)
 		},
 
+    watch:{
+      slideNum(){
+        switch (this.slideNum) {
+          case 1:
+            document.getElementById("line").style.width = "33.33%"
+            document.getElementById("slideNum").style.opacity = 0;
+
+            setTimeout(() => {
+              document.getElementById("slideNum").style.opacity = 1;
+            }, 500);
+            
+            break;
+          case 2:
+            document.getElementById("line").style.width = "66.66%"
+            document.getElementById("slideNum").style.opacity = 0;
+
+            setTimeout(() => {
+              document.getElementById("slideNum").style.opacity = 1;
+            }, 500);
+            
+            break;
+          case 3:
+            document.getElementById("line").style.width = "100%"
+            document.getElementById("slideNum").style.opacity = 0;
+
+            setTimeout(() => {
+              document.getElementById("slideNum").style.opacity = 1;
+            }, 500);
+            
+            break;
+        }
+      }
+    },
 
 		methods:{
-			
-
+      changeSlide(e){
+        this.slideNum = e.activeIndex + 1
+      }
 		}
 		
 		
@@ -140,8 +177,38 @@ import "swiper/components/scrollbar/scrollbar.scss"; // *
 
     .swiper-slide-active{
       >.overlay{
-        opacity: 0.4;
+        opacity: 0.5;
       }
     }
 	}
+  .slideNum{
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+      width: 25vw;
+      height: 10vh;
+      color: white;
+
+      #slideNum{
+        opacity: 1;
+        transition: .5s;
+      }
+      >p:nth-child(2){
+        width: 20vw;
+        height: 1px;
+        background: rgb(174, 174, 174);
+        margin: 10px 0 10px 0;
+        >span{
+          transition: .5s;
+          background: white;
+          width: 33.33%;
+          display: block;
+          height: 1px;
+        }
+      }
+      >p:not(:nth-child(2)){
+        padding-left: 15px;
+      }
+    }
 </style>
