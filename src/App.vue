@@ -1,15 +1,18 @@
 <template>
-  <router-view style="
-    display: block;
-" />
+  <div>
+    <Side></Side>
+    <router-view style="display: block;" />
+  </div>
 </template>
 
 <script>
 
+import Side from './components/SideMenu.vue';
+
 export default {
   name: 'App',
   components: {
-
+    Side
   }
 }
 </script>
@@ -24,5 +27,8 @@ export default {
   }  
   *::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera*/
+  }
+  body{
+    position: relative;
   }
 </style>
