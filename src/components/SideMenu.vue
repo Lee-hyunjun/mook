@@ -10,13 +10,13 @@
             <div class="SideMore">
                 <div class="Menus" id="Menus">
                     <div>
-                        <h1>HOME</h1>
+                        <h1 @click="goPage('HOME')">HOME</h1>
                     </div>
                     <div>
-                        <h1>ABOUT</h1>
+                        <h1 @click="goPage('ABOUT')">ABOUT</h1>
                     </div>
                     <div>
-                        <h1>PROJECT</h1>
+                        <h1 @click="goPage('PROJECT')">PROJECT</h1>
                     </div>
                 </div>
             </div>
@@ -38,13 +38,30 @@ export default {
     };
   },
 
-
-    
-  created() {
-  },
-
-
   methods:{
+    goPage(page){
+      switch (page) {
+        case 'HOME':
+          this.$router.push({name:'Home'})
+          this.chk = false;
+          this.changeLogo()
+        break;
+        case 'ABOUT':
+          this.$router.push({name:'About'})
+          this.chk = false;
+          this.changeLogo()
+        break;
+        case 'PROJECT':
+          this.$router.push({name:'Project'})
+          this.chk = false;
+          this.changeLogo()
+        break;
+      }
+      
+      
+      
+    },
+
     changeLogo(){
       if (this.chk === true) {
         document.getElementById("logo").style.color = 'black';
@@ -64,7 +81,7 @@ export default {
         top: 0;
         left: 0;
         width: 100vw;
-        height: 100px;
+        height: 8vh;
         z-index: 10;
         display: flex;
         align-items: center;

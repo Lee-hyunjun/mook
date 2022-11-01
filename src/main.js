@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 
 
 import Home from './components/Home/VideoScroll.vue';
+import About from './components/About/About.vue';
 
 Vue.config.productionTip = false
 
@@ -20,6 +21,12 @@ const routes = [
       path: '/Home',
       name: 'Home',
       component: Home
+    },
+
+    {
+      path: '/About',
+      name: 'About',
+      component: About
     },
 
 
