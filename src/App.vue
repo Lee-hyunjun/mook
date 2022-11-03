@@ -7,7 +7,7 @@
 
 <script>
 
-import Side from './components/SideMenu.vue';
+import Side from '@/components/SideMenu.vue';
 // import bgPattern from './assets/backgroundPattern.png';
 
 export default {
@@ -39,30 +39,22 @@ export default {
     font-family: 'BebasNeue-Regular';
   }
 
-    @font-face{
-    src: url('./assets/fonts/Objektiv Mk2 W03 Medium.ttf');
-    font-family: 'Objektiv Mk2 W03 Medium';
-  }
 
-  @font-face{
-    src: url('./assets/fonts/Objektiv Mk2 W03 Bold.ttf');
-    font-family: 'Objektiv Mk2 W03 Bold';
-  }
   
   body{
     background: #141414;
   }
-  body::before{
-    content: " ";
-    background-image: url('./assets/backgroundPattern.png');
-    background-size: cover;
-    opacity: 0.2;
-    width: 100vw;
-    height: 140vh;
-    position: absolute;
-    top: -18vh;
-    z-index: -1;
-  }
+  // body::before{
+  //   content: " ";
+  //   background-image: url('./assets/backgroundPattern.png');
+  //   background-size: cover;
+  //   opacity: 0.2;
+  //   width: 100vw;
+  //   height: 140vh;
+  //   position: absolute;
+  //   top: -18vh;
+  //   z-index: -1;
+  // }
   *{
     margin: 0;
     padding: 0;

@@ -1,10 +1,10 @@
 import Vue from 'vue';
-import App from './App.vue';
+import App from '@/App.vue';
 import VueRouter from 'vue-router';
 
 
-import Home from './components/Home/VideoScroll.vue';
-import About from './components/About/About.vue';
+import Home from '@/components/Home/VideoScroll.vue';
+import About from '@/components/About/About.vue';
 
 Vue.config.productionTip = false
 

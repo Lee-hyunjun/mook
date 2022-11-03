@@ -1,5 +1,5 @@
 {
-  "name": "bizdsnlab",
+  "name": "myfirstpage",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,12 +9,15 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "express": ">= 2.5.9",
     "hamburgers": "^1.2.1",
     "hooper": "^0.3.4",
     "i": "^0.3.6",
     "node-sass": "^4.14.1",
     "npm": "^7.14.0",
+    "path": "^0.12.7",
     "sass-loader": "^10.3.1",
+    "socket.io": "latest",
     "swiper": "^6.8.4",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^4.1.1",

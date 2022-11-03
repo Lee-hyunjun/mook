@@ -54,6 +54,8 @@ export default {
 
 <style lang="scss">
 
+
+
   @keyframes fadeInLeft {
       0% {
           opacity: 0;
@@ -242,6 +244,18 @@ export default {
       z-index: -1; 
       content: "";
     }
+  }
+
+  .About::before{
+    content: " ";
+    background-image: url('../../assets/backgroundPattern.png');
+    background-size: cover;
+    opacity: 0.2;
+    width: 100vw;
+    height: 140vh;
+    position: absolute;
+    top: -18vh;
+    left: -10vw
   }
 
 </style>
