@@ -144,7 +144,7 @@ export default {
       align-items: center;
       justify-content: center;
       >.img{
-        background-image: url('../../assets/aboutImg1.jpg');
+        background-image: url('https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/aboutImg1.jpg');
         background-size: cover;
         position: relative;
         width: 75%;
@@ -180,7 +180,7 @@ export default {
       filter: blur(3px);
       transform: scale(1.02);
       background-size: cover;
-      background-image: url('../../assets/aboutImg1.jpg');
+      background-image: url('https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/aboutImg1.jpg');
       z-index: -1; 
       content: "";
     }
@@ -240,7 +240,7 @@ export default {
       height: 100%;
       overflow: hidden;
       background-size: cover;
-      background-image: url('../../assets/aboutImg2.png');
+      background-image: url('https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/aboutImg2.png');
       z-index: -1; 
       content: "";
     }
@@ -248,7 +248,7 @@ export default {
 
   .About::before{
     content: " ";
-    background-image: url('../../assets/backgroundPattern.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/backgroundPattern.png');
     background-size: cover;
     opacity: 0.2;
     width: 100vw;
