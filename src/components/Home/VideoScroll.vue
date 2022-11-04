@@ -86,14 +86,7 @@ import "swiper/components/scrollbar/scrollbar.scss"; // *
 
 		
 		created() {
-      let test =  document.getElementById("video1");
-      console.log(test,"test")
-      test.src = 'blob:https://www.dropbox.com/10d6ed83-c6ef-43d5-b798-6dc089b8b736';
-      test.load()
-      test.onloadeddata = function() {
-        test.play();
-      }
-// blob:https://www.dropbox.com/10d6ed83-c6ef-43d5-b798-6dc089b8b736
+  
 		},
 
     watch:{
