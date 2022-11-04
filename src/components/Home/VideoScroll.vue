@@ -8,19 +8,19 @@
         <swiper-slide class="video_box">
             <div class="overlay"></div>
             <video data-swiper-parallax="45%"  loop="" autoplay="" muted="" >
-              <source src="http://flipevil.com/wp-content/uploads/2021/01/SEOUL.mp4" type="video/mp4">
+              <source src="../../assets/video1.mp4" type="video/mp4">
             </video>
         </swiper-slide>
         <swiper-slide class="video_box">
             <div class="overlay"></div>
             <video data-swiper-parallax="45%"  loop="" autoplay="" muted="" >
-              <source src="http://flipevil.com/wp-content/uploads/2021/01/dumb.mp4" type="video/mp4">
+              <source src="../../assets/video2.mp4" type="video/mp4">
             </video>
         </swiper-slide>
         <swiper-slide class="video_box">
             <div class="overlay"></div>
             <video data-swiper-parallax="45%"  loop="" autoplay="" muted="" >
-              <source src="http://flipevil.com/wp-content/uploads/2021/01/instagram.mp4" type="video/mp4">
+              <source src="../../assets/video3.mp4" type="video/mp4">
             </video>
         </swiper-slide>
 
