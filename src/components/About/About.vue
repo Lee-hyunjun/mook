@@ -35,8 +35,6 @@
 
 <script>
 
-import img1 from '../../assets/aboutImg1.jpg';
-import img2 from '../../assets/aboutImg2.png';
 
 export default {
   name: 'App',
@@ -44,8 +42,7 @@ export default {
   },
   data() {
     return {
-      img1 : img1,
-      img2 : img2
+
     };
   },
 

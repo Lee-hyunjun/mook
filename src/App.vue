@@ -24,28 +24,18 @@ export default {
   }
   
   @font-face{
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf') format("truetype");
-    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/fonts/GmarketSansTTF/GmarketSansTTFMedium.ttf');
     font-family: 'GmarketSansTTFMedium';
   }
 
   @font-face{
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.ttf') format("truetype");
-    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/fonts/GmarketSansTTF/GmarketSansTTFBold.ttf');
     font-family: 'GmarketSansTTFBold';
   }
 
 
   @font-face{
-    src:url('./assets/fonts/BebasNeue-Regular.ttf');
+    src:url('https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/fonts/BebasNeue-Regular.ttf');
     font-family: 'BebasNeue-Regular';
   }
 
