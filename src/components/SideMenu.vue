@@ -1,7 +1,7 @@
 <template>
     <div class="Nav">
         <div class="logo">
-            <img id="logo" src="../assets/whitelogo.png" alt="">
+            <img id="logo" src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/whitelogo.png" alt="">
         </div>
         <div class="Side">
             <input class="burger-check" v-model="chk" type="checkbox" id="burger-check" @change="changeLogo" /><label class="burger-icon" for="burger-check"><span class="burger-sticks"></span></label>
