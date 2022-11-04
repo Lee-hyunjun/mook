@@ -1,9 +1,7 @@
 <template>
     <div class="Nav">
         <div class="logo">
-            <span id="logo" style="color:white;font-size: 28px;font-weight: bold;">
-                L O G O
-            </span>
+            <img id="logo" src="../assets/whitelogo.png" alt="">
         </div>
         <div class="Side">
             <input class="burger-check" v-model="chk" type="checkbox" id="burger-check" @change="changeLogo" /><label class="burger-icon" for="burger-check"><span class="burger-sticks"></span></label>
@@ -89,6 +87,8 @@ export default {
         .logo{
           padding-left:  5vw;
           #logo{
+            padding-top: 1vh;
+            width: 10vw;;
             position: relative;
             transition: 0.25s;
             z-index: 3;
