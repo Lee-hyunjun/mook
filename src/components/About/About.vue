@@ -14,7 +14,7 @@
     </div>
 
     <div id="item1">
-      <div class="img"></div>
+      <img src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/about/content1.png" class="img"/>
       <div class="text">
         <p class="aboutUs"></p>
         <span></span>
@@ -22,19 +22,20 @@
     </div>
 
     <div id="item2">
-      <div class="img"></div>
+      <img src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/about/content2.png" class="img"/>
       <div class="text">
         <p class="aboutUs"></p>
         <span></span>
       </div>
     </div>
 
-    <div id="item3">
-    </div>
+    <img src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/about/cmpyGroup.png" id="item3" />
+    <img src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/about/content3.png" id="item4" />
+    <img src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/about/content4.png" id="item5" />
 
     <!-- <div id="item1">
       <h1>WOW CITY POP<br></h1>
-      <div class="img"></div>
+      <img class="img"></img>
     </div> -->
   </div>
 </template>
@@ -77,14 +78,14 @@ export default {
       }
 
       to {
-          opacity: 2;
+          opacity: 1;
           transform: translateZ(0);
       }
   }
 
-  #item1{
-      animation: fadeInLeft 1s;
-  }
+  // #item1{
+  //     animation: fadeInLeft 1s;
+  // }
 
    @keyframes fadeInRight {
         0% {
@@ -104,7 +105,7 @@ export default {
         }
 
         to {
-            opacity: 2;
+            opacity: 1;
             transform: translateZ(0);
         }
     }
@@ -116,8 +117,7 @@ export default {
     margin: 0 auto;
     margin-top: 8vh;
     width: 80%;
-    height: 92vh;
-    padding-bottom: 30vh;
+    padding-bottom: 10vh;
     position: relative;
     
     .whatIsThis{
@@ -138,35 +138,62 @@ export default {
       justify-content: flex-end;
       align-items: flex-end;
       width: 100%;
-      height: 80vh;
+      height: auto;
       z-index: 1;
       position: relative;
+      margin-bottom: 5vh;
+      animation: fadeInLeft 2s;
       >.img{
-        width: 20%;
-        height: 80%;
-        background-size: cover;
-        background-image: url("https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/about/content1.png");
+        margin-right: 18vw;
+        display: block;
+        width: 30%;
+        height: auto;
       }
     }
     #item2{
       width: 100%;
-      height: 80vh;
+      height: auto;
       z-index: 1;
       position: relative;
+      animation: fadeInRight 2s;
+      margin-bottom: 5vh;
       >.img{
+        margin-left: 10vw;
+        display: block;
         width: 30%;
-        height: 85%;
-        background-size: cover;
-        background-image: url("https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/about/content2.png");
+        height: auto;
       }
     }
 
     #item3{
-      width: 100%;
-      height: 88vh;
-      background-size: cover;
-      background-image: url("https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/about/cmpyGroup.png");
+      display: block;
+      position: relative;
+      z-index: 1;
+      margin: 0 auto;
+      width: 56vw;
+      height: auto;
     }
+
+    
+    #item4{
+      display: block;
+      position: relative;
+      z-index: 1;
+      margin-top: 10vh;
+      width: 100%;
+      height: auto;
+    }
+
+    #item5{
+      display: block;
+      position: relative;
+      z-index: 1;
+      margin-top: 10vh;
+      width: 100%;
+      height: auto;
+    }
+
+
 
   }
 
@@ -176,7 +203,7 @@ export default {
     background-size: cover;
     opacity: 0.2;
     width: 100vw;
-    height: 140vh;
+    height: 103%;
     position: absolute;
     top: -18vh;
     left: -10vw
