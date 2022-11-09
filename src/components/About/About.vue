@@ -1,18 +1,5 @@
 <template>
   <div class="About">
-    <div class="whatIsThis">
-      W<br>
-      H<br>
-      A<br>
-      T<br>
-      I<br>
-      S<br> 
-      T<br>
-      H<br>
-      I<br>
-      S
-    </div>
-
     <div id="item1">
       <img src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/about/content1.png" class="img"/>
       <div class="text">
@@ -144,9 +131,8 @@ export default {
       margin-bottom: 5vh;
       animation: fadeInLeft 2s;
       >.img{
-        margin-right: 18vw;
         display: block;
-        width: 30%;
+        width: 70%;
         height: auto;
       }
     }
