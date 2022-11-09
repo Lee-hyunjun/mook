@@ -9,7 +9,7 @@
     </div>
 
     <div id="item2">
-      <img src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/about/content2.png" class="img"/>
+      <img src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/about/changeContent2.png" class="img"/>
       <div class="text">
         <p class="aboutUs"></p>
         <span></span>
@@ -144,6 +144,7 @@ export default {
       animation: fadeInRight 2s;
       margin-bottom: 5vh;
       >.img{
+        margin-left: 3vw;
         display: block;
         width: 70%;
         height: auto;
