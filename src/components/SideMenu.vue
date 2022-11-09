@@ -97,21 +97,21 @@ export default {
 
     }
     .SideMore{
-		width: 100vw;
-		height: 100vh;
+        width: 30vw;
+        height: 100vh;
         background: white;
         transition: 1s;
         position: absolute;
-        left: 0;
+        right: 0;
         top: -100vh;
         z-index: 2;
         display: flex;
         justify-content: flex-end;
         .Menus{
-            transition: .25s;
-            width: 40vw;
-            margin-top:10vh;
-            margin-right:10vw;
+transition: .25s;
+    width: 80%;
+    margin-top: 10vh;
+    margin-right: 17%;
             h1{
                 font-size: 3.5vw;
                 text-align: right;
