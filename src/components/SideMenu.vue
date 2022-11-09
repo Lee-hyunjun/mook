@@ -16,6 +16,9 @@
                     <div>
                         <h1 @click="goPage('PROJECT')">PROJECT</h1>
                     </div>
+                    <div>
+                        <h1><a style="text-decoration:none; color:black;" href="/member/agreement.html">JOIN</a></h1>
+                    </div>
                 </div>
             </div>
         </div>
