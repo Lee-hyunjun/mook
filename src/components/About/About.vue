@@ -144,9 +144,8 @@ export default {
       animation: fadeInRight 2s;
       margin-bottom: 5vh;
       >.img{
-        margin-left: 10vw;
         display: block;
-        width: 30%;
+        width: 70%;
         height: auto;
       }
     }
