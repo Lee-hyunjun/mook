@@ -58,12 +58,12 @@ export default {
   *{
     margin: 0;
     padding: 0;
-    // -ms-overflow-style: none; /* IE and Edge */
-    // scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
     
   }  
   *::-webkit-scrollbar {
-    // display: none; /* Chrome, Safari, Opera*/
+    display: none; /* Chrome, Safari, Opera*/
   }
   body{
     position: relative;
