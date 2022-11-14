@@ -69,12 +69,12 @@ import "swiper/components/scrollbar/scrollbar.scss"; // *
 				swiperOption: {
 					direction: 'vertical',
           mousewheel: true,
-          parallax: true,
-          touchRatio: 0,
-          pagination: {   //페이징 사용자 설정
-            el: ".pagination_fraction",   //페이징 태그 클래스 설정 
-            type : 'fraction'
-          },
+          // parallax: true,
+          // touchRatio: 0,
+          // pagination: {   //페이징 사용자 설정
+          //   el: ".pagination_fraction",   //페이징 태그 클래스 설정 
+          //   type : 'fraction'
+          // },
           modules:[Parallax,Pagination],
 					speed: 1000,
 				},
@@ -172,8 +172,8 @@ import "swiper/components/scrollbar/scrollbar.scss"; // *
       -webkit-transition: all .65s ease;
       -o-transition: all .65s ease;
       transition: all .65s ease;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
+      // -webkit-backface-visibility: hidden;
+      // backface-visibility: hidden;
     }
 
     .swiper-slide-active{
