@@ -2,7 +2,7 @@
 <template>
   
   <div >
-    <customCursor></customCursor>
+    <!-- <customCursor></customCursor> -->
     <Side></Side>
     <router-view @setProjectUrl="setProjectUrl"  />
   </div>
@@ -11,13 +11,13 @@
 <script>
 
 import Side from '@/components/SideMenu.vue';
-import customCursor from "@/assets/CustomCursor.vue"
+// import customCursor from "@/assets/CustomCursor.vue"
 // import bgPattern from './assets/backgroundPattern.png';
 
 export default {
   name: 'App',
   components: {
-    customCursor,
+    // customCursor,
     Side
   },
 
