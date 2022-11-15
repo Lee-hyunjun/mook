@@ -1,5 +1,8 @@
+
 <template>
+  
   <div >
+    <customCursor></customCursor>
     <Side></Side>
     <router-view @setProjectUrl="setProjectUrl"  />
   </div>
@@ -8,11 +11,13 @@
 <script>
 
 import Side from '@/components/SideMenu.vue';
+import customCursor from "@/assets/CustomCursor.vue"
 // import bgPattern from './assets/backgroundPattern.png';
 
 export default {
   name: 'App',
   components: {
+    customCursor,
     Side
   },
 
@@ -28,6 +33,7 @@ export default {
 </script>
 
 <style lang="scss">
+
   *{
     font-family: GmarketSansTTFBold;
   }
@@ -47,8 +53,6 @@ export default {
     src:url('https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/fonts/BebasNeue-Regular.ttf');
     font-family: 'BebasNeue-Regular';
   }
-
-
   
   body{
     background: #141414;
