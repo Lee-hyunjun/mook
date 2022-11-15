@@ -1,7 +1,7 @@
 <template>
   <div >
     <Side></Side>
-    <router-view  />
+    <router-view @setProjectUrl="setProjectUrl"  />
   </div>
 </template>
 
@@ -14,6 +14,15 @@ export default {
   name: 'App',
   components: {
     Side
+  },
+
+  data(){
+    return{
+    }
+  },
+
+  methods:{
+   
   }
 }
 </script>

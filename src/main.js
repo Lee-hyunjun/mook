@@ -6,6 +6,7 @@ import VueRouter from 'vue-router';
 import Home from '@/components/Home/VideoScroll.vue';
 import About from '@/components/About/About.vue';
 import Project from '@/components/Project/Project.vue';
+import ProjectMore from '@/components/Project/ProjectMore.vue';
 Vue.config.productionTip = false
 
 Vue.use(VueRouter); // router 기능 확장 선언
@@ -34,7 +35,11 @@ const routes = [
       name: 'Project',
       component: Project
     },
-    
+    {
+      path: '/ProjectMore',
+      name: 'ProjectMore',
+      component: ProjectMore
+    },
 
 ];
 

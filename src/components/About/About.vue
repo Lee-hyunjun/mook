@@ -16,7 +16,6 @@
       </div>
     </div>
 
-    <img src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/about/cmpyGroup.png" id="item3" />
     <img src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/about/content3.png" id="item4" />
     <img src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/about/content4.png" id="item5" />
 
