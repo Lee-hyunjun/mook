@@ -8,6 +8,7 @@
   </div>
 </template>
 
+
 <script>
 
 import Side from '@/components/SideMenu.vue';
