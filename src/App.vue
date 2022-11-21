@@ -21,6 +21,7 @@ export default {
     Side
   },
 
+  
   data(){
     return{
     }
