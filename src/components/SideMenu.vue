@@ -17,7 +17,7 @@
                         <h1 @click="goPage('PROJECT')">PROJECT</h1>
                     </div>
                     <div>
-                        <h1><a style="text-decoration:none; color:black;" href="/member/agreement.html">JOIN</a></h1>
+                        <h1><a style="text-decoration:none; color:black; font-size:1.5vw;" href="/member/login.html">JOIN</a></h1>
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@ export default {
 
     }
     .SideMore{
-        width: 30vw;
+        width: 22vw;
         height: 100vh;
         background: white;
         transition: 1s;
@@ -116,9 +116,10 @@ transition: .25s;
     margin-top: 10vh;
     margin-right: 17%;
             h1{
-                font-size: 3.5vw;
+                font-size: 2.5vw;
                 text-align: right;
                 margin-top:2vh;
+                cursor: Crosshair;
             }
         }
     }
