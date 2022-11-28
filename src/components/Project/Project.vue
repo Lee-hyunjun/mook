@@ -3,28 +3,46 @@
     <div class="content_tp">
       <iframe src="https://www.youtube.com/embed/-fJfxvAcBgE?mute=1&autoplay=1" title="YouTube video player" frameborder="0"></iframe>
     </div>
+    <h1 style="margin-bottom:1vw; font-size: 3.5vw;">
+      VIDEO-CONTENTS
+    </h1>
     <div class="content_bt">
       <div class="menus">
-        
-        <div @click="showMore('https://www.youtube.com/embed/sqgxcCjD04s?mute=1&autoplay=1&loop=1&playlist=sqgxcCjD04s')">
-          <img src="https://i.ytimg.com/vi/sqgxcCjD04s/maxresdefault.jpg">
+        <div>
+          <div @click="showMore('https://www.youtube.com/embed/sqgxcCjD04s?mute=1&autoplay=1&loop=1&playlist=sqgxcCjD04s')">
+            <img src="https://i.ytimg.com/vi/sqgxcCjD04s/maxresdefault.jpg">
+          </div>
+          <p class="menu_text">VIDEO-NAME SINGERNAME</p>
         </div>
-        <div @click="showMore('https://www.youtube.com/embed/w7fpXqQD7pU?mute=1&autoplay=1&loop=1&playlist=w7fpXqQD7pU')">
-          <img src="https://i.ytimg.com/vi/hVLRky1hGfk/maxresdefault.jpg">
+        <div>
+          <div @click="showMore('https://www.youtube.com/embed/w7fpXqQD7pU?mute=1&autoplay=1&loop=1&playlist=w7fpXqQD7pU')">
+            <img src="https://i.ytimg.com/vi/hVLRky1hGfk/maxresdefault.jpg">
+          </div>
+          <p class="menu_text">VIDEO-NAME SINGERNAME</p>
         </div>
-        <div @click="showMore('https://www.youtube.com/embed/v7bnOxV4jAc?mute=1&autoplay=1&loop=1&playlist=v7bnOxV4jAc')">
-          <img src="https://i.ytimg.com/vi/v7bnOxV4jAc/maxresdefault.jpg">
+        <div>
+          <div @click="showMore('https://www.youtube.com/embed/v7bnOxV4jAc?mute=1&autoplay=1&loop=1&playlist=v7bnOxV4jAc')">
+            <img src="https://i.ytimg.com/vi/v7bnOxV4jAc/maxresdefault.jpg">
+          </div>
+          <p class="menu_text">VIDEO-NAME SINGERNAME</p>
         </div>
-      </div>
-      <div class="menus">
-        <div @click="showMore('https://www.youtube.com/embed/TZquZFXS9Zk?mute=1&autoplay=1&loop=1&playlist=TZquZFXS9Zk')">
-          <img src="https://image.bugsm.co.kr/album/images/500/200725/20072571.jpg">
+        <div>
+          <div @click="showMore('https://www.youtube.com/embed/TZquZFXS9Zk?mute=1&autoplay=1&loop=1&playlist=TZquZFXS9Zk')">
+            <img src="https://image.bugsm.co.kr/album/images/500/200725/20072571.jpg">
+          </div>
+          <p class="menu_text">VIDEO-NAME SINGERNAME</p>
         </div>
-        <div @click="showMore('https://www.youtube.com/embed/lOrU0MH0bMk?mute=1&autoplay=1&loop=1&playlist=lOrU0MH0bMk')">
-          <img src="https://image.genie.co.kr/Y/IMAGE/IMG_MUSICVIDEO/000/186/122/186122_1_640x360.JPG/dims/resize/Q_80,0">
+        <div>
+          <div @click="showMore('https://www.youtube.com/embed/lOrU0MH0bMk?mute=1&autoplay=1&loop=1&playlist=lOrU0MH0bMk')">
+            <img src="https://image.genie.co.kr/Y/IMAGE/IMG_MUSICVIDEO/000/186/122/186122_1_640x360.JPG/dims/resize/Q_80,0">
+          </div>
+          <p class="menu_text">VIDEO-NAME SINGERNAME</p>
         </div>
-        <div @click="showMore('https://www.youtube.com/embed/DSEO6BAh3kw?mute=1&autoplay=1&loop=1&playlist=DSEO6BAh3kw')">
-          <img src="https://i.ytimg.com/vi/DSEO6BAh3kw/maxresdefault.jpg">
+        <div>
+          <div @click="showMore('https://www.youtube.com/embed/DSEO6BAh3kw?mute=1&autoplay=1&loop=1&playlist=DSEO6BAh3kw')">
+            <img src="https://i.ytimg.com/vi/DSEO6BAh3kw/maxresdefault.jpg">
+          </div>
+          <p class="menu_text">VIDEO-NAME SINGERNAME</p>
         </div>
       </div>
       <!-- <div class="menus">
@@ -79,6 +97,9 @@ export default {
 
 <style lang="scss">
   .Project{
+    >*{
+      font-family: 'BebasNeue-Regular' !important;
+    }
     width: 73vw;
     margin: 0 auto;
     padding-top:  5vw;
@@ -86,7 +107,7 @@ export default {
     .content_tp{
       width: 100%;
       height: 40vw;
-      margin-bottom: 2vw;
+      margin-bottom: 5vw;
       >iframe{
         width: 100%;
         height: 100%;
@@ -94,22 +115,40 @@ export default {
     }
 
     .menus{
+      
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 2vw;
+      flex-flow: wrap;
       >div{
-        width: 30%;
-        height: 15vw; 
+        max-width: 448px;
+        max-height: 268px; 
+        width: 100%;
+        height: 15vw;
+        min-width: 388px;
+        min-height: 208px; 
+        position: relative;
+        margin-bottom: 45px;
+        >div{
+          width: 100%;
+          height: 100%;
         // border: 1px solid white;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        >img{
-          width: 150%;
-          height: auto;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          >img{
+            width: 150%;
+            height: auto;
+          }
+        }
 
+        >p{
+          font-family: 'BebasNeue-Regular' !important;
+          font-size: 1vw;
+          bottom: -10%;
+          left: 0;
+          position: absolute;
         }
       }
     }
