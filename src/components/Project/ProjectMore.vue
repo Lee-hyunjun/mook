@@ -30,7 +30,7 @@ export default {
     width: 80vw;
     height: 45vw;
     margin: 0 auto;
-    padding-top: 3vw;
+    padding-top: 5vw;
     color: white;
     >iframe{
       width: 100%;

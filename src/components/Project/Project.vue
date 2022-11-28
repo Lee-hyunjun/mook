@@ -139,7 +139,12 @@ export default {
           justify-content: center;
           >img{
             width: 150%;
+            transition: .7s;
             height: auto;
+          }
+          >img:hover{
+            opacity: .6;
+            cursor: pointer;
           }
         }
 
