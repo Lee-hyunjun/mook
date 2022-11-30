@@ -4,7 +4,7 @@
       <iframe src="https://www.youtube.com/embed/-fJfxvAcBgE?mute=1&autoplay=1" title="YouTube video player" frameborder="0"></iframe>
     </div>
     <h1 style="margin-bottom:1vw; font-size: 3.5vw;">
-      VIDEO-CONTENTS
+      PROJECT
     </h1>
     <div class="content_bt">
       <div class="menus">
@@ -26,6 +26,8 @@
           </div>
           <p class="menu_text">VIDEO-NAME SINGERNAME</p>
         </div>
+      </div>
+      <div class="menus">
         <div>
           <div @click="showMore('https://www.youtube.com/embed/TZquZFXS9Zk?mute=1&autoplay=1&loop=1&playlist=TZquZFXS9Zk')">
             <img src="https://image.bugsm.co.kr/album/images/500/200725/20072571.jpg">
@@ -87,6 +89,7 @@ export default {
 
   methods:{
     showMore(url){
+      
       data.state.url = url
       this.$router.push({name:'ProjectMore'})
     }
@@ -100,7 +103,7 @@ export default {
     >*{
       font-family: 'BebasNeue-Regular' !important;
     }
-    width: 73vw;
+    width: 70vw;
     margin: 0 auto;
     padding-top:  5vw;
     color: white;
@@ -119,18 +122,15 @@ export default {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-flow: wrap;
       >div{
-        max-width: 448px;
-        max-height: 268px; 
+        // max-width: 448px;
+        // max-height: 268px; 
         width: 100%;
         height: 15vw;
-        min-width: 388px;
-        min-height: 208px; 
         position: relative;
-        margin-bottom: 45px;
+        margin-bottom: 65px;
         >div{
-          width: 100%;
+          width: 97%;
           height: 100%;
         // border: 1px solid white;
           overflow: hidden;
@@ -150,8 +150,8 @@ export default {
 
         >p{
           font-family: 'BebasNeue-Regular' !important;
-          font-size: 1vw;
-          bottom: -10%;
+          font-size: 1.25vw;
+          top: 104%;
           left: 0;
           position: absolute;
         }

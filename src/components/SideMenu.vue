@@ -1,7 +1,7 @@
 <template>
     <div class="Nav">
         <div class="logo">
-            <img id="logo" src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/whitelogo.png" alt="">
+            <img id="logo" @click="goPage('HOME')" src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/whitelogo.png" alt="">
         </div>
         <div class="Side">
             <input class="burger-check" v-model="chk" type="checkbox" id="burger-check" @change="changeLogo" /><label class="burger-icon" for="burger-check"><span class="burger-sticks"></span></label>
@@ -17,7 +17,7 @@
                         <h1 @click="goPage('PROJECT')">PROJECT</h1>
                     </div>
                     <div>
-                        <h1><a style="text-decoration:none; color:black; font-size:1.5vw;" href="/member/login.html">JOIN</a></h1>
+                        <h1><a style="text-decoration:none; color:black; font-size:1.5vw;" href="/member/login.html">LOGIN</a></h1>
                     </div>
                 </div>
             </div>
@@ -41,6 +41,8 @@ export default {
 
   methods:{
     goPage(page){
+      window.scrollTo(0,0);
+
       switch (page) {
         case 'HOME':
           this.$router.push({name:'Home'})
@@ -89,6 +91,7 @@ export default {
         justify-content: space-between;
         .logo{
           padding-left:  5vw;
+          cursor: pointer;
           #logo{
             padding-top: 1vh;
             width: 10vw;;

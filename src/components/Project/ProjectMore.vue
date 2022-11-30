@@ -22,12 +22,16 @@ export default {
     };
   },
 
+  created(){
+    window.scrollTo(0,0);
+  }
+
 }
 </script>
 
 <style lang="scss">
   .Project_more{
-    width: 80vw;
+    width: 75vw;
     height: 45vw;
     margin: 0 auto;
     padding-top: 5vw;
