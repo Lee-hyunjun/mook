@@ -17,6 +17,9 @@
                         <h1 @click="goPage('PROJECT')">PROJECT</h1>
                     </div>
                     <div>
+                        <h1><a style="text-decoration:none; color:black; " href="/category/product/25">SHOP</a></h1>
+                    </div>
+                    <div>
                         <h1><a style="text-decoration:none; color:black; font-size:1.5vw;" href="/member/login.html">LOGIN</a></h1>
                     </div>
                 </div>
