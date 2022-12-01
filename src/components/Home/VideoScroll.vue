@@ -7,19 +7,19 @@
     >
         <swiper-slide class="video_box">
             <div class="overlay"></div>
-            <video id="video1" data-swiper-parallax="45%"  loop="" autoplay="" muted="" >
+            <video id="video1" data-swiper-parallax="45%"  loop="" autoplay="" muted="" playsinline >
               <source src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/video1.mp4" type="video/mp4">
             </video>
         </swiper-slide>
         <swiper-slide class="video_box">
             <div class="overlay"></div>
-            <video data-swiper-parallax="45%"  loop="" autoplay="" muted="" >
+            <video data-swiper-parallax="45%"  loop="" autoplay="" muted="" playsinline >
               <source src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/video2.mp4" type="video/mp4">
             </video>
         </swiper-slide>
         <swiper-slide class="video_box">
             <div class="overlay"></div>
-            <video data-swiper-parallax="45%"  loop="" autoplay="" muted="" >
+            <video data-swiper-parallax="45%"  loop="" autoplay="" muted="" playsinline >
               <source src="https://cdn.jsdelivr.net/gh/Lee-hyunjun/mook@main/src/assets/video4.mp4" type="video/mp4">
             </video>
         </swiper-slide>
